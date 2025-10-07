@@ -1,7 +1,9 @@
-export default function Navbar({ onSignupClick }) {
+import Logo from '../assets/icons/Logo.png'
+
+const Navbar = ({ onSignupClick }) => {
   return (
     <nav className="flex justify-between items-center px-10 py-4 bg-transparent text-white absolute top-0 w-full">
-      <h1 className="text-2xl font-bold text-yellow-400">🎉 Party</h1>
+      <img src={Logo} alt="" />
       <ul className="flex gap-6">
         <li>Home</li>
         <li>About us</li>
@@ -18,5 +20,7 @@ export default function Navbar({ onSignupClick }) {
         </button>
       </div>
     </nav>
-  );
+  )
 }
+
+export default Navbar

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
-export default function SignupPopup({ onClose }) {
+
+const SignupPopup = ({ onClose }) => {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <motion.div
@@ -29,5 +30,7 @@ export default function SignupPopup({ onClose }) {
         </div>
       </motion.div>
     </div>
-  );
+  )
 }
+
+export default SignupPopup
